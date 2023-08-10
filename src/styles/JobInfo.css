@@ -1,0 +1,13 @@
+.job-info {
+    margin-left: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 89px;
+}
+
+.job-info h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0;
+}

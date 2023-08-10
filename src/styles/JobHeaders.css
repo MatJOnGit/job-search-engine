@@ -1,0 +1,32 @@
+.job-headers {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 24px;
+}
+
+.job-headers h1 {
+    margin: 0;
+    font-size: 18px;
+    color: #5CA5A5;
+}
+
+.job-headers span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8px;
+    padding: 5px 8px;
+    font-weight: 700;
+    color: #FFFFFF;
+    border-radius: 12px;
+    font-size: 14px;
+}
+
+.new-tag {
+    background-color: #5CA5A5;
+}
+
+.featured-tag {
+    background-color: #2B3939;
+}

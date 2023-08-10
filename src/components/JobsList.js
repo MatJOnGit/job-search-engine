@@ -7,6 +7,7 @@ function JobsList() {
             <JobCard />
             <JobCard />
             <JobCard />
+            <JobCard />
         </ul>
     )
 }

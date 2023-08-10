@@ -1,13 +1,14 @@
 import './../App.css';
+import React from 'react'
 import Header from './Header';
 import JobsList from './JobsList';
 
 function App() {
 	return (
-		<div>
+		<React.Fragment>
 			<Header />
 			<JobsList />
-		</div>
+		</React.Fragment>
 	)
 }
 

@@ -1,5 +1,14 @@
 header {
-    background-color: #63BABA;
+    background-color: #5BA5A4;
     height: 156px;
     width: 100%;
+    position: relative;
+    background-image: url('/public/images/headers/bg-header-mobile.svg');
+    background-size: cover;
+}
+
+@media (min-width: 1440px) {
+    header {
+        background-image: url('/public/images/headers/bg-header-desktop.svg');
+    }
 }

@@ -1,14 +1,24 @@
 .job-card {
-    width: 327px;
+    box-sizing: border-box;
+    width: 80%;
     height: 257px;
     background-color: white;
     list-style: none;
-    margin: 10px 0;
+    margin: 24px 0 0;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'League Spartan', Arial, Helvetica, sans-serif;
+}
+
+.job-card > div {
+    display: flex;
 }
 
 @media (min-width: 1440px) {
     .job-card {
-        width: 1110px;
+        max-width: 1110px;
         height: 152px;
     }
 }

@@ -1,0 +1,18 @@
+.job-tags {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.job-tags > p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    color: #5CA5A5;
+    background-color: #EEF6F6;
+    margin-left: 16px;
+    padding: 5px 9px;
+    font-size: 16px;
+    font-weight: 700;
+}
