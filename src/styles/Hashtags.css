@@ -1,18 +1,28 @@
-.job-tags {
+.job-hashtags {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
+    list-style: none;
+    padding: 0;
 }
 
-.job-tags > p {
+.job-hashtags > li {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 32px;
     color: #5CA5A5;
     background-color: #EEF6F6;
-    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 16px;
     padding: 5px 9px;
     font-size: 16px;
     font-weight: 700;
+    border-radius: 5px;
+}
+
+@media (min-width: 1440px) {
+    .job-hashtags > li {
+        height: 32px;
+    }
 }

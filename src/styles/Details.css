@@ -1,0 +1,30 @@
+.job-details {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-top: 8px;
+    padding: 0;
+}
+
+.job-details li {
+    display: inline-block;
+    margin: 0;
+    color: #7C8F8F;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.job-details li::before {
+    content: "•";
+    margin: 0 10px;
+}
+
+.job-details li:first-child::before {
+    content: none;
+}
+
+@media (min-width: 1440px) {
+    .job-details p {
+        font-size: 18px;
+    }
+}

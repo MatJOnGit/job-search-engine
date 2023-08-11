@@ -1,0 +1,15 @@
+.company-logo {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    position: relative;
+    top: -60px;
+}
+
+@media (min-width: 1440px) {
+    .company-logo {
+        width: 88px;
+        height: 88px;
+        top: -74px;
+    }
+}

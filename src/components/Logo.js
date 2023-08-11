@@ -1,15 +1,15 @@
-import './../styles/CompanyLogo.css';
+import './../styles/Logo.css';
 
-function CompanyLogo() {
+function Logo() {
     const imagesUrl = './../../images/companies_logo/';
 
     return (
         <img
             src={`${imagesUrl}photosnap.svg`}
             alt='account logo'
-            className='company-picture'
+            className='company-logo'
         />
     )
 }
 
-export default CompanyLogo;
+export default Logo;

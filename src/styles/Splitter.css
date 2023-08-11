@@ -1,0 +1,12 @@
+.horizontal-splitter {
+    width: 279px;
+    height: 1px;
+    background-color: #B7C4C4;
+    margin: 15px 0 0;
+}
+
+@media (min-width: 1440px) {
+    .horizontal-splitter {
+        display: none;
+    }
+}

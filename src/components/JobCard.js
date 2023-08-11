@@ -1,17 +1,20 @@
-import CompanyLogo from './CompanyLogo';
-import JobInfo from './JobInfo';
-import JobTags from './JobTags';
+import Logo from './Logo';
+import Splitter from './Splitter';
+import Info from './Info';
+import Hashtags from './Hashtags';
 import './../styles/JobCard.css';
 
 function JobCard() {
     return (
         <li className='job-card'>
-            <div>
-                <CompanyLogo />
-                <JobInfo />
-            </div>
+            <Logo />
+            <Info
+                companyName='Photosnap'
+                postDate='2023-08-09T16:15'
+            />
             
-            <JobTags />
+            <Splitter />
+            <Hashtags />
         </li>
     )
 }
