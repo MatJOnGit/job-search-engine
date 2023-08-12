@@ -1,6 +1,7 @@
 .job-hashtags {
     display: flex;
     flex-direction: row;
+    justify-self: flex-end;
     flex-wrap: wrap;
     align-items: center;
     list-style: none;
@@ -11,14 +12,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #5CA5A5;
     background-color: #EEF6F6;
+    color: #5CA5A5;
     margin-right: 16px;
     margin-top: 16px;
     padding: 5px 9px;
     font-size: 16px;
     font-weight: 700;
     border-radius: 5px;
+}
+
+.job-hashtags > li:hover {
+    background-color: #5CA5A5;
+    color: #EEF6F6;
 }
 
 @media (min-width: 1440px) {

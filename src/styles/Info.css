@@ -15,4 +15,8 @@
     .job-info h2 {
         font-size: 22px;
     }
+
+    .job-info h2:hover {
+        color: #5CA5A5;
+    }
 }

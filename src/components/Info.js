@@ -3,13 +3,13 @@ import Details from './Details';
 import './../styles/Info.css';
 import { getDateOffset } from '../utils/dateUtils';
 
-function Info({companyName, postDate}) {
-    const postingOffset = getDateOffset(new Date(postDate));
+function Info(props) {
+    const postingOffset = getDateOffset(new Date(props.postDate));
 
     return (
         <div className='job-info'>
             <Headers
-                companyName={companyName}
+                companyName={props.companyName}
                 postingOffset={postingOffset}
                 isJobFeatured={true}
             />

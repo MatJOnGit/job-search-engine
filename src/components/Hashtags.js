@@ -1,13 +1,11 @@
 import './../styles/Hashtags.css';
 
-function Hashtags() {
+function Hashtags({hashtagsList}) {
     return (
         <ul className='job-hashtags'>
-            <li>Front-end</li>
-            <li>Senior</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Javascript</li>
+            {hashtagsList.map((hashtag, index) => (
+                <li key={index}>{hashtag}</li>
+            ))}
         </ul>
     )
 }

@@ -8,3 +8,10 @@
     align-items: center;
     list-style: none;
 }
+
+@media (min-width: 1440px) {
+    .jobs-list {
+        width: 77%;
+        margin-top: 76px;
+    }
+}

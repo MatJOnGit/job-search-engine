@@ -2,14 +2,15 @@
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    position: relative;
-    top: -60px;
+    position: absolute;
+    top: -24px;
 }
 
 @media (min-width: 1440px) {
     .company-logo {
+        position: unset;
         width: 88px;
         height: 88px;
-        top: -74px;
+        margin-right: 24px;
     }
 }

@@ -4,17 +4,25 @@ import Info from './Info';
 import Hashtags from './Hashtags';
 import './../styles/JobCard.css';
 
-function JobCard() {
+function JobCard(props) {
     return (
         <li className='job-card'>
-            <Logo />
-            <Info
-                companyName='Photosnap'
-                postDate='2023-08-09T16:15'
-            />
+            <div className='job-content'>
+                <Logo
+                    pictureName = {props.pictureName}
+                />
+
+                <Info
+                    companyName = {props.companyName}
+                    postDate = {props.postDate}
+                />
+            </div>
             
             <Splitter />
-            <Hashtags />
+
+            <Hashtags
+                hashtagsList={props.hashtagsList}
+            />
         </li>
     )
 }

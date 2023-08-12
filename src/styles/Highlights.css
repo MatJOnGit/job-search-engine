@@ -22,3 +22,9 @@
 .featured-tag {
     background-color: #2B3939;
 }
+
+@media (min-width: 1440px) {
+    .job-highlights {
+        margin: 0;
+    }
+}

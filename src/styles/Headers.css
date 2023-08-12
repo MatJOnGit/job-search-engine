@@ -16,5 +16,6 @@
 @media (min-width: 1440px) {
     .job-headers h1 {
         font-size: 18px;
+        margin-right: 15px;
     }
 }

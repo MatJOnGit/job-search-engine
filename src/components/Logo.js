@@ -1,11 +1,11 @@
 import './../styles/Logo.css';
 
-function Logo() {
+function Logo({pictureName}) {
     const imagesUrl = './../../images/companies_logo/';
 
     return (
         <img
-            src={`${imagesUrl}photosnap.svg`}
+            src={`${imagesUrl}${pictureName}`}
             alt='account logo'
             className='company-logo'
         />
