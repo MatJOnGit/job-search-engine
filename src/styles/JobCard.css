@@ -10,7 +10,6 @@
     display: flex;
     flex-direction: column;
     font-family: 'League Spartan', Arial, Helvetica, sans-serif;
-    flex-direction: column;
     border-radius: 5px;
 }
 

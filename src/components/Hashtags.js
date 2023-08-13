@@ -1,10 +1,11 @@
 import './../styles/Hashtags.css';
+import { getCapitalizedWords } from '../utils/wordsUtils';
 
 function Hashtags({hashtagsList}) {
     return (
         <ul className='job-hashtags'>
             {hashtagsList.map((hashtag, index) => (
-                <li key={index}>{hashtag}</li>
+                <li key={index}>{getCapitalizedWords(hashtag)}</li>
             ))}
         </ul>
     )

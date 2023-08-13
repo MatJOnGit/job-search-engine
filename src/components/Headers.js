@@ -1,17 +1,20 @@
 import Highlights from './Highlights';
 import './../styles/Headers.css';
+import { getCapitalizedWords } from '../utils/wordsUtils';
 
-function JobHeaders({companyName, postingOffset, isJobFeatured}) {
+function Headers(props) {
+    const capitalizedName = getCapitalizedWords(props.companyName);
+
     return (
         <div className='job-headers'>
-            <h1>{companyName}</h1>
+            <h1>{capitalizedName}</h1>
 
             <Highlights
-                postingOffset={postingOffset}
-                isJobFeatured={isJobFeatured}
+                postingOffset={props.postingOffset}
+                isJobFeatured={props.isJobFeatured}
             />
         </div>
     )
 }
 
-export default JobHeaders;
+export default Headers;

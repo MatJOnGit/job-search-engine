@@ -15,6 +15,10 @@ function JobCard(props) {
                 <Info
                     companyName = {props.companyName}
                     postDate = {props.postDate}
+                    position = {props.position}
+                    contractType = {props.contractType}
+                    location = {props.location}
+                    isJobFeatured = {props.isJobFeatured}
                 />
             </div>
             

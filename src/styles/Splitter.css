@@ -3,6 +3,7 @@
     height: 1px;
     background-color: #B7C4C4;
     margin: 15px 0 0;
+    align-self: center;
 }
 
 @media (min-width: 1440px) {
