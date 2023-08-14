@@ -1,4 +1,4 @@
-export const jobs = [
+export const jobsData = [
     {
         id: 1,
         company: 'photosnap',

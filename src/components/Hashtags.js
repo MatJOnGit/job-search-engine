@@ -1,11 +1,16 @@
 import './../styles/Hashtags.css';
 import { getCapitalizedWords } from '../utils/wordsUtils';
 
-function Hashtags({hashtagsList}) {
+function Hashtags(props) {
     return (
         <ul className='job-hashtags'>
-            {hashtagsList.map((hashtag, index) => (
-                <li key={index}>{getCapitalizedWords(hashtag)}</li>
+            {props.hashtagsList.map((hashtag, index) => (
+                <li
+                    key={index}
+                    onClick={() => props.handleHashtagClick(hashtag)}
+                >
+                    {getCapitalizedWords(hashtag)}
+                </li>
             ))}
         </ul>
     )

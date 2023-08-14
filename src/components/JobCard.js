@@ -26,6 +26,7 @@ function JobCard(props) {
 
             <Hashtags
                 hashtagsList={props.hashtagsList}
+                handleHashtagClick={props.handleHashtagClick}
             />
         </li>
     )

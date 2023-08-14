@@ -1,21 +1,22 @@
-import { jobs } from './../data/Jobs';
+import { jobsData } from './../data/Jobs';
 import JobCard from './JobCard';
 import './../styles/JobsList.css';
 
-function JobsList() {
+function JobsList(props) {
     return (
         <ul className='jobs-list'>
-            {jobs.map((props) => (
+            {jobsData.map((job) => (
                 <JobCard
-                    key = {props.id}
-                    pictureName = {props.picture}
-                    companyName = {props.company}
-                    postDate = {props.date}
-                    position = {props.position}
-                    contractType = {props.status}
-                    location = {props.location}
-                    hashtagsList = {props.hashtags}
-                    isJobFeatured = {props.featured}
+                    key = {job.id}
+                    pictureName = {job.picture}
+                    companyName = {job.company}
+                    postDate = {job.date}
+                    position = {job.position}
+                    contractType = {job.status}
+                    location = {job.location}
+                    hashtagsList = {job.hashtags}
+                    isJobFeatured = {job.featured}
+                    handleHashtagClick = {props.handleHashtagClick}
                 />
             ))}
         </ul>
