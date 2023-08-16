@@ -1,14 +1,21 @@
-.job-hashtags {
-    display: flex;
-    flex-direction: row;
-    justify-self: flex-end;
-    flex-wrap: wrap;
-    align-items: center;
-    list-style: none;
-    padding: 0;
+#job-filters {
+    width: 77%;
+    height: 72px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: -36px;
+    z-index: 99;
+    border-radius: 5px;
 }
 
-.job-hashtags > li {
+.selected-hashtags {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.selected-hashtags li {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,15 +26,4 @@
     font-size: 16px;
     font-weight: 700;
     border-radius: 5px;
-}
-
-.job-hashtags > li:hover {
-    background-color: #5CA5A5;
-    color: #EEF6F6;
-}
-
-@media (min-width: 1440px) {
-    .job-hashtags > li {
-        height: 32px;
-    }
 }

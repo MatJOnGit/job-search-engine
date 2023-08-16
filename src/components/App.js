@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './../styles/App.css';
 import React from 'react'
 import Banner from './Banner';
+import JobFilters from './JobFilters';
 import JobsList from './JobsList';
 
 function App() {
@@ -11,14 +12,18 @@ function App() {
 		if (!selectedHashtags.includes(hashtag)) {
 			const updatedHashtags = [...selectedHashtags, hashtag];
 			setSelectedHashtags(updatedHashtags);
-			console.log(updatedHashtags);
 		}
 	}
 
 	return (
 		<React.Fragment>
 			<Banner />
-			<JobsList handleHashtagClick={handleHashtagClick} />
+			<div className='job-search'>
+				{selectedHashtags.length > 0 && (
+					<JobFilters selectedHashtags={selectedHashtags} />
+				)}
+				<JobsList handleHashtagClick={handleHashtagClick} />
+			</div>
 		</React.Fragment>
 	)
 }

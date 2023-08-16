@@ -39,6 +39,15 @@ body {
     justify-content: center;
 }
 
+.job-search {
+    width: 100%;
+    height: calc(100vh - 24px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
 @keyframes App-logo-spin {
     from {
         transform: rotate(0deg);

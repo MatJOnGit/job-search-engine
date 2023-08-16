@@ -15,7 +15,7 @@
 
 @media (min-width: 1440px) {
     .job-card {
-        max-width: 1110px;
+        width: 100%;
         min-height: 152px;
         flex-direction: row;
         padding: 30px 40px;
